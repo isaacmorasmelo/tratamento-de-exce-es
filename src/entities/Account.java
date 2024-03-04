@@ -14,6 +14,9 @@ public class Account {
         balance -= amount;
     }
 
+    public Account() {
+    }
+
     public Account(int number, String holder, double balance, double withdrawnLimit) {
         this.number = number;
         this.holder = holder;
