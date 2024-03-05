@@ -1,5 +1,7 @@
 package entities;
 
+import entities.exception.bException;
+
 public class Account {
     private int number;
     private String holder;
@@ -11,9 +13,18 @@ public class Account {
     }
 
     public void withdrawn(double amount){
-        balance -= amount;
+            gWithdrawn(amount);
+            balance -= amount;
     }
 
+    public void gWithdrawn(double amount){
+        if (amount > getWithdrawnLimit()) {
+            throw new bException("The amount exceeds withdraw limit");
+        }
+        if (amount > balance){
+            throw new bException("Not enough balance");
+        }
+    }
     public Account() {
     }
 
