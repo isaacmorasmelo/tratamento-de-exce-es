@@ -1,14 +1,13 @@
-import entities.Account;
-import entities.exception.bException;
+package exercicio.entities;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import exercicio.entities.Account;
+import exercicio.entities.exception.bException;
+
 import java.util.Locale;
 import java.util.Scanner;
 
 public class fixacao {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws bException {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         Account Account1 = new Account();

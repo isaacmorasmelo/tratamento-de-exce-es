@@ -1,6 +1,6 @@
-package entities;
+package exercicio.entities;
 
-import entities.exception.bException;
+import exercicio.entities.exception.bException;
 
 public class Account {
     private int number;
