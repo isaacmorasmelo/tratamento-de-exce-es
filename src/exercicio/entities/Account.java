@@ -25,6 +25,7 @@ public class Account {
             throw new bException("Not enough balance");
         }
     }
+
     public Account() {
     }
 
